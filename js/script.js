@@ -26,4 +26,10 @@
    		$this.toggleClass('toggle')
   	})
 
+  	var $nav = $('nav')
+
+  	$hamburger.on('click', function() {
+  		$nav.toggleClass('open')
+  	})
+
 })(jQuery)

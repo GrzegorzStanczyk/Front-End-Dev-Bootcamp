@@ -6,15 +6,22 @@ html(lang='pl')
     title Zadania z pierwszego tygodnia
   body
     #container
+
       nav
+        ul
+          li link1
+          li link2
+          li link3
+          li link4
+
       h2 Zadanie 2
 
-      p Wszystkie elementy &lt;div&gt;, posiadające zarówno klasę "grid" oraz klasę "grid-12"
+      p.title Wszystkie elementy &lt;div&gt;, posiadające zarówno klasę "grid" oraz klasę "grid-12"
       .grid grid
       .grid-12 grid-12
       .grid.grid-12 grid grid-12
 
-      p
+      p.title
         | Wszystkie elementy &lt;a&gt;, których atrybut "href" zaczyna się
         | na "http", znajdujące się w elemencie o klasie "nav"
       .nav
@@ -28,7 +35,7 @@ html(lang='pl')
           li
             a(href='http://eduweb.pl' target='_blank') href='http://eduweb.pl'
 
-      p
+      p.title
         | Wszystkie elementy &lt;input&gt;, których typ to "radio" lub
         | "checkbox" oraz dodatkowo nie są aktualnie zaznaczone (checked).
       form
@@ -37,7 +44,7 @@ html(lang='pl')
         label Kobieta: #[input(type='radio' name='gender' value='female')]
         label Pełnoletni: #[input(type='checkbox')]
 
-      p
+      p.title
         | Wyłącznie pierwszy element &lt;p&gt;, który jest pusty (nie
         | zawiera dzieci) oraz znajduje się w elemencie &lt;div&gt; z
         | identyfikatorem "text"
@@ -49,7 +56,7 @@ html(lang='pl')
         p
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 
-      p
+      p.title
         | Wszystkie elementy z klasą "pagination-item", które nie są
         | elementem &lt;span&gt;
 
@@ -58,11 +65,13 @@ html(lang='pl')
       a(href='#' class='pagination-item') 3
       span(class='pagination-item pagination-item--current') 4
 
-      <!--Zadanie 3-->
       h2 Zadanie 3
+      p.title Stwórz kontener z przykładową nawigacją, który domyślnie nie będzie widoczny. Może on znajdować się na samej górze strony lub w sidebarze. Następnie umieść na stronie przycisk typu “hamburger menu”, po kliknięciu którego wysunie się wcześniej ukryte menu. Animacja, jaką zastosujesz, zależy od Ciebie. Ponowne kliknięcie przycisku powinno chować nawigację.
       button.hamburger
         span
 
+      h2 Zadanie 4
+      p.title Stwórz aplikację, która zawierać będzie prosty formularz z wyłącznie jednym polem &lt; input &gt;, a także przyciskiem &lt; button &gt;. Napisz kod tak, aby po wpisaniu informacji do pola i po wciśnięciu przycisku, wstawić wpisane informacje do nowego elementu &lt; li &gt;, a ten element do wcześniej wstawionego elementu &lt; ul &gt;. W ten sposób, za każdym razem, gdy zostanie wpisane np. jakieś imię, pojawi się ono na stronie. Dodatkowo możesz (nie musisz) zadbać o to, by jeśli nic nie zostało wpisane do pola, nie wstawiać na stronę pustego elementu &lt; li &gt;.
 
 
     <!-- #container-->

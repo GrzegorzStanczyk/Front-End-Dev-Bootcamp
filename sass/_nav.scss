@@ -3,11 +3,16 @@
 nav {
 	width: 300px;
 	height: 100%;
-	overflow: scroll;
+	overflow: auto;
 	background-color: $bgc;
-
 	position: fixed;
 	top: 0;
-
+	right: 0;
 	z-index: 9999;
+	transition: all .5s ease-in-out;
+	transform: translateX(300px);
+}
+
+nav.open {
+	transform: translateX(0);
 }

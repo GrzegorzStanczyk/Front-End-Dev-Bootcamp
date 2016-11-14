@@ -7,13 +7,20 @@
   </head>
   <body>
     <div id="container">
-      <nav></nav>
+      <nav>
+        <ul>
+          <li>link1</li>
+          <li>link2</li>
+          <li>link3</li>
+          <li>link4</li>
+        </ul>
+      </nav>
       <h2>Zadanie 2</h2>
-      <p>Wszystkie elementy &lt;div&gt;, posiadające zarówno klasę "grid" oraz klasę "grid-12"</p>
+      <p class="title">Wszystkie elementy &lt;div&gt;, posiadające zarówno klasę "grid" oraz klasę "grid-12"</p>
       <div class="grid">grid</div>
       <div class="grid-12">grid-12</div>
       <div class="grid grid-12">grid grid-12</div>
-      <p>
+      <p class="title">
         Wszystkie elementy &lt;a&gt;, których atrybut "href" zaczyna się
         na "http", znajdujące się w elemencie o klasie "nav"
       </p>
@@ -25,7 +32,7 @@
           <li><a href="http://eduweb.pl" target="_blank">href='http://eduweb.pl'</a></li>
         </ul>
       </div>
-      <p>
+      <p class="title">
         Wszystkie elementy &lt;input&gt;, których typ to "radio" lub
         "checkbox" oraz dodatkowo nie są aktualnie zaznaczone (checked).
       </p>
@@ -43,7 +50,7 @@
           <input type="checkbox">
         </label>
       </form>
-      <p>
+      <p class="title">
         Wyłącznie pierwszy element &lt;p&gt;, który jest pusty (nie
         zawiera dzieci) oraz znajduje się w elemencie &lt;div&gt; z
         identyfikatorem "text"
@@ -55,12 +62,15 @@
         <p></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
       </div>
-      <p>
+      <p class="title">
         Wszystkie elementy z klasą "pagination-item", które nie są
         elementem &lt;span&gt;
-      </p><a href="#" class="pagination-item">1</a><a href="#" class="pagination-item">2</a><a href="#" class="pagination-item">3</a><span class="pagination-item pagination-item--current">4</span><!--Zadanie 3-->
+      </p><a href="#" class="pagination-item">1</a><a href="#" class="pagination-item">2</a><a href="#" class="pagination-item">3</a><span class="pagination-item pagination-item--current">4</span>
       <h2>Zadanie 3</h2>
+      <p class="title">Stwórz kontener z przykładową nawigacją, który domyślnie nie będzie widoczny. Może on znajdować się na samej górze strony lub w sidebarze. Następnie umieść na stronie przycisk typu “hamburger menu”, po kliknięciu którego wysunie się wcześniej ukryte menu. Animacja, jaką zastosujesz, zależy od Ciebie. Ponowne kliknięcie przycisku powinno chować nawigację.</p>
       <button class="hamburger"><span></span></button>
+      <h2>Zadanie 4</h2>
+      <p class="title">Stwórz aplikację, która zawierać będzie prosty formularz z wyłącznie jednym polem &lt; input &gt;, a także przyciskiem &lt; button &gt;. Napisz kod tak, aby po wpisaniu informacji do pola i po wciśnięciu przycisku, wstawić wpisane informacje do nowego elementu &lt; li &gt;, a ten element do wcześniej wstawionego elementu &lt; ul &gt;. W ten sposób, za każdym razem, gdy zostanie wpisane np. jakieś imię, pojawi się ono na stronie. Dodatkowo możesz (nie musisz) zadbać o to, by jeśli nic nie zostało wpisane do pola, nie wstawiać na stronę pustego elementu &lt; li &gt;.</p>
     </div><!-- #container-->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/script.js"></script>

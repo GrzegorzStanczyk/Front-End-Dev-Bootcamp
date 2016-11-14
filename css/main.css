@@ -63,11 +63,22 @@
 nav {
   width: 300px;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
   background-color: pink;
   position: fixed;
   top: 0;
-  z-index: 9999; }
+  right: 0;
+  z-index: 9999;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(300px);
+      -ms-transform: translateX(300px);
+          transform: translateX(300px); }
+
+nav.open {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0); }
 
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
@@ -99,3 +110,8 @@ a {
   display: inline-block;
   padding: 10px;
   margin: 10px; }
+
+.title {
+  display: block;
+  background-color: lightgray;
+  padding: 10px; }

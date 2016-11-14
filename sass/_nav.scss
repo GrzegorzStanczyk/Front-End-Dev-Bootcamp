@@ -1,0 +1,13 @@
+
+
+nav {
+	width: 300px;
+	height: 100%;
+	overflow: scroll;
+	background-color: $bgc;
+
+	position: fixed;
+	top: 0;
+
+	z-index: 9999;
+}

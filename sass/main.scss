@@ -1,0 +1,45 @@
+@import '_vars';
+@import '_hamburger';
+@import '_nav';
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  // font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+a { cursor: pointer; }
+
+.bgc {
+  background-color: $bgc;
+}
+
+.color {
+  color: $text-color;
+}
+
+.grid {
+  width: 100%;
+  border: 2px solid #000;
+}
+
+.grid-12 {
+  width: 83%;
+  border: 2px solid #000;
+  margin: 0 auto;
+}
+
+.pagination-item {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+
+

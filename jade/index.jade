@@ -1,0 +1,70 @@
+doctype html
+html(lang='pl')
+  head
+    meta(charset='UTF-8')
+    link( rel='stylesheet' href='css/main.css')
+    title Zadania z pierwszego tygodnia
+  body
+    #container
+      nav
+      h2 Zadanie 2
+
+      p Wszystkie elementy &lt;div&gt;, posiadające zarówno klasę "grid" oraz klasę "grid-12"
+      .grid grid
+      .grid-12 grid-12
+      .grid.grid-12 grid grid-12
+
+      p
+        | Wszystkie elementy &lt;a&gt;, których atrybut "href" zaczyna się
+        | na "http", znajdujące się w elemencie o klasie "nav"
+      .nav
+        ul
+          li
+            a(href='#') href='#'
+          li
+            a(href='#') href='#'
+          li
+            a(href='http://eduweb.pl' target='_blank') href='http://eduweb.pl'
+          li
+            a(href='http://eduweb.pl' target='_blank') href='http://eduweb.pl'
+
+      p
+        | Wszystkie elementy &lt;input&gt;, których typ to "radio" lub
+        | "checkbox" oraz dodatkowo nie są aktualnie zaznaczone (checked).
+      form
+        label Imię: #[input(type='text' name='name')]
+        label Mężczyzna: #[input(type='radio' name='gender' value='male' checked='checked')]
+        label Kobieta: #[input(type='radio' name='gender' value='female')]
+        label Pełnoletni: #[input(type='checkbox')]
+
+      p
+        | Wyłącznie pierwszy element &lt;p&gt;, który jest pusty (nie
+        | zawiera dzieci) oraz znajduje się w elemencie &lt;div&gt; z
+        | identyfikatorem "text"
+
+      #text
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        p
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        p
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+
+      p
+        | Wszystkie elementy z klasą "pagination-item", które nie są
+        | elementem &lt;span&gt;
+
+      a(href='#' class='pagination-item') 1
+      a(href='#' class='pagination-item') 2
+      a(href='#' class='pagination-item') 3
+      span(class='pagination-item pagination-item--current') 4
+
+      <!--Zadanie 3-->
+      h2 Zadanie 3
+      button.hamburger
+        span
+
+
+
+    <!-- #container-->
+    script(src='js/jquery-3.1.1.min.js')
+    script(src='js/script.js')

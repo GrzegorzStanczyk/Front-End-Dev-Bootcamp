@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Zadania z pierwszego tygodnia</title>
+  </head>
+  <body>
+    <div id="container">
+      <nav></nav>
+      <h2>Zadanie 2</h2>
+      <p>Wszystkie elementy &lt;div&gt;, posiadające zarówno klasę "grid" oraz klasę "grid-12"</p>
+      <div class="grid">grid</div>
+      <div class="grid-12">grid-12</div>
+      <div class="grid grid-12">grid grid-12</div>
+      <p>
+        Wszystkie elementy &lt;a&gt;, których atrybut "href" zaczyna się
+        na "http", znajdujące się w elemencie o klasie "nav"
+      </p>
+      <div class="nav">
+        <ul>
+          <li><a href="#">href='#'</a></li>
+          <li><a href="#">href='#'</a></li>
+          <li><a href="http://eduweb.pl" target="_blank">href='http://eduweb.pl'</a></li>
+          <li><a href="http://eduweb.pl" target="_blank">href='http://eduweb.pl'</a></li>
+        </ul>
+      </div>
+      <p>
+        Wszystkie elementy &lt;input&gt;, których typ to "radio" lub
+        "checkbox" oraz dodatkowo nie są aktualnie zaznaczone (checked).
+      </p>
+      <form>
+        <label>Imię: 
+          <input type="text" name="name">
+        </label>
+        <label>Mężczyzna: 
+          <input type="radio" name="gender" value="male" checked="checked">
+        </label>
+        <label>Kobieta: 
+          <input type="radio" name="gender" value="female">
+        </label>
+        <label>Pełnoletni: 
+          <input type="checkbox">
+        </label>
+      </form>
+      <p>
+        Wyłącznie pierwszy element &lt;p&gt;, który jest pusty (nie
+        zawiera dzieci) oraz znajduje się w elemencie &lt;div&gt; z
+        identyfikatorem "text"
+      </p>
+      <div id="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        <p></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        <p></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+      </div>
+      <p>
+        Wszystkie elementy z klasą "pagination-item", które nie są
+        elementem &lt;span&gt;
+      </p><a href="#" class="pagination-item">1</a><a href="#" class="pagination-item">2</a><a href="#" class="pagination-item">3</a><span class="pagination-item pagination-item--current">4</span><!--Zadanie 3-->
+      <h2>Zadanie 3</h2>
+      <button class="hamburger"><span></span></button>
+    </div><!-- #container-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

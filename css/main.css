@@ -1,0 +1,101 @@
+.hamburger span:before, .hamburger span:after {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 0.5rem;
+  background: #3331BF;
+  -webkit-border-radius: 3rem;
+          border-radius: 3rem;
+  left: -0.25rem;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+.hamburger {
+  position: relative;
+  width: 4.4rem;
+  height: 4.4rem;
+  margin: 2rem;
+  cursor: pointer;
+  background: #F28C56;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .hamburger span {
+    position: absolute;
+    width: 3rem;
+    height: 0;
+    border: 0.25rem solid #3331BF;
+    -webkit-border-radius: 3rem;
+            border-radius: 3rem;
+    -webkit-transition: .5s;
+    transition: .5s; }
+    .hamburger span:before {
+      top: -1rem; }
+    .hamburger span:after {
+      top: .5rem; }
+  .hamburger.toggle span {
+    border: none;
+    border-color: #3331BF; }
+    .hamburger.toggle span:before {
+      position: absolute;
+      -webkit-transform: rotate(405deg);
+          -ms-transform: rotate(405deg);
+              transform: rotate(405deg);
+      margin-top: 12px;
+      left: .1rem; }
+    .hamburger.toggle span:after {
+      position: absolute;
+      -webkit-transform: rotate(495deg);
+          -ms-transform: rotate(495deg);
+              transform: rotate(495deg);
+      margin-top: -12px;
+      left: .1rem; }
+
+nav {
+  width: 300px;
+  height: 100%;
+  overflow: scroll;
+  background-color: pink;
+  position: fixed;
+  top: 0;
+  z-index: 9999; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  cursor: pointer; }
+
+.bgc {
+  background-color: pink; }
+
+.color {
+  color: pink; }
+
+.grid {
+  width: 100%;
+  border: 2px solid #000; }
+
+.grid-12 {
+  width: 83%;
+  border: 2px solid #000;
+  margin: 0 auto; }
+
+.pagination-item {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px; }

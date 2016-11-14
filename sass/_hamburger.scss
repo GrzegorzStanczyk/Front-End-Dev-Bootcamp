@@ -1,0 +1,63 @@
+$borderColor: #3331BF;
+$backgroundColor: #F28C56;
+
+%extend {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 0.5rem;
+  background: $borderColor;
+  border-radius: 3rem;
+  left: -0.25rem;
+  transition: .5s;
+}
+
+.hamburger {
+  position: relative;
+  width: 4.4rem;
+  height: 4.4rem;
+  margin: 2rem;
+  cursor: pointer;
+  background: $backgroundColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    span {
+    position: absolute;
+    width: 3rem;
+    height: 0;
+    border: .25rem solid $borderColor;
+    border-radius: 3rem;
+    transition: .5s;
+
+      &:before {
+        top: -1rem;
+        @extend %extend;
+      }
+      &:after {
+        top: .5rem;
+        @extend %extend;
+      }
+  }
+  &.toggle {
+    span {
+      border: none;
+      border-color: $borderColor;
+
+      &:before {
+        position: absolute;
+        transform: rotate(405deg);
+        margin-top: 12px;
+        left: .1rem;
+      }
+
+      &:after {
+        position: absolute;
+        transform: rotate(495deg);
+        margin-top: -12px;
+        left: .1rem;
+      }
+    }
+  }
+}

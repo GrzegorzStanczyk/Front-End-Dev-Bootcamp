@@ -3,10 +3,4 @@ With [eduweb.pl](http://eduweb.pl/)
 
 ## Week 1
 
-1. Exercise 1
-   * Utworzenie repozytorium do umieszczania prac domowych.
-2. Exercise 2
-   *
-3. Exercise 3
-4. Exercise 4
-5. Exercise 5
+Zadania z pierwszego tygodnia nauki jQuery

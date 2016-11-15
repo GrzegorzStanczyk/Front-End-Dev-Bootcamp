@@ -62,4 +62,30 @@
   	})
 
 
+  	// Zadanie 5
+
+
+
+  	$('.json').click(function() {
+	  	$.get('https://jsonplaceholder.typicode.com/users', function(resault) {
+
+	  		var users = resault
+
+	  		var $usersList = $('<ul/>').insertAfter('.json')
+
+	  		for (var i = 0; i <= users.length; i++) {
+	  			// $usersList.append('<li>' + users[i].name + '<br>' + users[i].username + '<br>' + users[i].email + '<br>' + users[i].phone)
+	  			$usersList.append(addUser(users[i].name, users[i].username, users[i].email, users[i].phone))
+	  		}
+	  	})
+
+	})
+	function addUser(name, username, email, phone) {
+  		var $user = $('<li />', {
+  			html: 'name: ' + name + '<br>' + 'username: ' + username + '<br>' + 'email: ' + email + '<br>' + 'phone: ' + phone
+
+  		})
+  		return $user
+  	}
+
 })(jQuery)

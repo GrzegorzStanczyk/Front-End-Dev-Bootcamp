@@ -79,13 +79,19 @@
 	  		}
 	  	})
 
+
+
 	})
 	function addUser(name, username, email, phone) {
   		var $user = $('<li />', {
   			html: 'name: ' + name + '<br>' + 'username: ' + username + '<br>' + 'email: ' + email + '<br>' + 'phone: ' + phone
 
   		})
+
+  		$('.json').remove()
+
   		return $user
   	}
+
 
 })(jQuery)
